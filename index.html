@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Animales Inmortales AV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de login -->
+        <div id="loginScreen">
+            <h1>🐾 Animales Inmortales AV</h1>
+            <p>La única app que ayuda a extender la vida de tu mascota con ciencia, amor y veterinaria 24/7.</p>
+            <button id="googleSignIn">🔐 Regístrate con Google</button>
+        </div>
+
+        <!-- Pantalla principal -->
+        <div id="mainScreen" style="display: none;">
+            <header>
+                <h2>¡Bienvenido, <span id="userEmail">Usuario</span>!</h2>
+                <button id="logoutBtn">Salir</button>
+            </header>
+
+            <section id="vetChat">
+                <h3>👩‍⚕️ Dra. Lía (Veterinaria AI)</h3>
+                <p id="vetResponse">Hola, soy la Dra. Lía. Tu mascota merece una vida larga y feliz. ¿En qué puedo ayudarte hoy?</p>
+                <button id="speakBtn">🔊 Escuchar</button>
+            </section>
+
+            <section id="animals">
+                <h3>Animales Longevos</h3>
+                <div id="animalList"></div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
