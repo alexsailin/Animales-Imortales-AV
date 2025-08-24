@@ -1,0 +1,11 @@
+{
+  "name": "animales-inmortales-av",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "echo 'No hay servidor, solo abre index.html'",
+    "build": "echo 'No hay build, es estático'"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
